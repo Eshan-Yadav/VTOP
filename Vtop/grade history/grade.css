@@ -1,0 +1,339 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(233, 227, 227); */
+}
+
+.navbar-top{
+    /* background-color:rgb(78, 78, 228); */
+    background-image: linear-gradient(to right, rgb(61, 61, 212),lightblue, rgb(74, 81, 214));
+    max-width: 100vw;
+    height: 50px;
+}
+
+
+
+
+
+.navbar-left{
+    position: fixed;
+    left:0;
+    top:50px;
+    bottom:0;
+   
+    width: 40px;
+    box-shadow: 3px 2px 30px rgb(51, 49, 49);
+    background-color: lightgrey;
+
+    transition: width  100ms ease-in;
+    
+    
+
+   
+}
+
+ul{
+    list-style:none;
+    display: flex;
+    flex-direction:column;
+    gap:6px;
+    padding-left: 8px;
+
+}
+
+
+
+.navbar-left p{
+    visibility: hidden;
+    opacity: 0;
+    /* transition: visibility 0.5s, opacity 0.5s ease-in; */
+    /* transition: visibility 5s Fast-Out, Slow In; */
+   
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    padding-left: 10px;
+  
+}
+
+
+.navbar-left:hover{
+    width: 150px;
+}
+.navbar-left:hover p{
+    visibility: visible;
+    opacity: 1;
+    display: inline-block;
+  
+}
+
+.navbar-left li{
+    padding-top: 5px;
+    padding-left: 1px;
+    padding-bottom: 5px;
+    transition: all 200ms ease;
+    transition-delay: all 200ms ease;
+}
+.navbar-left li:hover{
+    background-color: skyblue;
+}
+
+
+.data{
+    margin-left: 50px;
+    margin-top: 10px;
+    max-width: 94vw;
+    border: solid lightgrey 1px;
+}
+
+.data > *>*{
+    border-bottom: solid lightgrey 1px; 
+
+}
+
+.data h2{
+    margin: 0;
+    padding-left: 9px;
+    border-bottom: solid lightgrey 1px;
+}
+
+.data p{
+   margin-top:5px;
+   margin-bottom: 5px;
+   padding-left: 20px;
+   max-width: 500px;
+}
+
+.data button{
+    background-color: #0dcaf0;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+
+.left ul>*>*{
+    margin:0;
+}
+
+.navbar-top{
+    
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-top .left ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top:0px;
+    bottom:0px;
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+
+.left img{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.left{
+    color:white;
+}
+.left h2{
+    font-size:40px;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.right img{
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+    border-radius: 50% 50%;
+}
+
+button:hover{
+    background-color: #72e5fc;
+    cursor: pointer;
+}
+
+.hidden{
+    z-index: 1;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    margin: 9px 313px;
+}
+
+.hidden:hover{
+    cursor: pointer;
+}
+
+.hidden1{
+    z-index: 1;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    margin: 9px 13px;
+}
+
+.hidden1:hover{
+    cursor: pointer;
+}
+
+
+.data table{
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    border-collapse: collapse;
+    border: solid lightgrey 1px;
+}
+
+.data table,td,th{
+    border-collapse: collapse;
+     border: solid lightgrey 1px;
+ }
+
+ .grades table{
+    margin-top: 10px;
+ }
+
+
+.data h2{
+    margin: 10px 10px;
+    padding-bottom: 10px;
+}
+
+.about{
+    margin-right: 10px;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    margin-bottom: 20px;
+    margin-top: 10px;
+    box-shadow: 0 0 80px rgb(87, 81, 81);
+}
+
+.about table th,.subjects table th,.curriculum table th,.basket table th,.basket table tr:nth-child(2){
+    /* font-family: 'Courier New', Courier, monospace; */
+    color:white;
+    background-color: rgb(125, 143, 249);
+    height: 30px;
+}
+
+
+.subjects .temp{
+    display: flex;
+    /* gap:100px; */
+    justify-content: space-between;
+}
+
+.eff{
+    padding-top: 5px;
+    margin-left:600px;
+}
+
+.download{
+    display: flex;
+    margin-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px 5px;
+    background-color: green;
+    border-radius: 8px;
+    /* max-width: 30px; */
+    transition: all 200ms ease;
+}
+
+.download:hover{
+    cursor: pointer;
+    background-color:rgba(33, 215, 33, 0.86) ;
+}
+
+.download object{
+    display: inline-block;
+    padding-right: 8px;
+ 
+}
+
+.grades .N{
+    color:red;
+}
+
+.N ul{
+    margin-left: 18px;
+    list-style: disc;
+}
+
+.N li{
+    margin: 0;
+}
+
+.N b{
+    text-decoration: underline;
+}
+
+.basket{
+    margin-top: 30px;
+}
+
+.cgpa{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border: solid rgb(252, 201, 72) 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+    box-shadow: 0 0 80px rgb(87, 81, 81);
+    width: calc(100% - 20px);
+}
+
+.cgpa th{
+    background-color: rgb(252, 201, 72);
+    height: 50px;
+}
+
+
+
+
+.hidden{
+    z-index: 1;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    margin: 9px 313px;
+}
+
+.hidden:hover{
+    cursor: pointer;
+}
+
+.hidden1{
+    z-index: 1;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    margin: 9px 13px;
+}
+
+.hidden1:hover{
+    cursor: pointer;
+}
+
+

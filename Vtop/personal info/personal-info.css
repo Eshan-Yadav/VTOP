@@ -1,0 +1,265 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: rgb(233, 227, 227); */
+}
+
+.navbar-top{
+  
+    /* background-color:rgb(78, 78, 228); */
+    background-image: linear-gradient(to right, rgb(61, 61, 212),lightblue, rgb(74, 81, 214));
+    max-width: 100vw;
+
+    height: 50px;
+}
+
+
+
+
+
+.navbar-left{
+    position: fixed;
+    left:0;
+    top:50px;
+    bottom:0;
+   
+    width: 40px;
+    box-shadow: 3px 2px 30px rgb(51, 49, 49);
+    background-color: lightgrey;
+
+    transition: width  100ms ease-in;
+    
+
+   
+}
+
+ul{
+    list-style:none;
+    display: flex;
+    flex-direction:column;
+    gap:6px;
+    padding-left: 8px;
+
+}
+
+
+
+.navbar-left p{
+    visibility: hidden;
+    opacity: 0;
+    /* transition: visibility 0.5s, opacity 0.5s ease-in; */
+    /* transition: visibility 5s Fast-Out, Slow In; */
+   
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    padding-left: 10px;
+  
+}
+
+
+.navbar-left:hover{
+    width: 150px;
+}
+.navbar-left:hover p{
+    visibility: visible;
+    opacity: 1;
+    display: inline-block;
+  
+}
+
+.navbar-left li{
+    padding-top: 5px;
+    padding-left: 1px;
+    padding-bottom: 5px;
+    transition: all 200ms ease;
+    transition-delay: all 200ms ease;
+}
+.navbar-left li:hover{
+    background-color: skyblue;
+}
+
+
+.data{
+    margin-left: 50px;
+    margin-top: 10px;
+    max-width: 94vw;
+    border: solid lightgrey 1px;
+}
+
+.data > *>*{
+    /* border-bottom: solid lightgrey 1px;  */
+
+}
+
+.data h2{
+    margin: 0;
+    padding-left: 9px;
+    border-bottom: solid lightgrey 1px;
+}
+
+.data p{
+   margin-top:5px;
+   margin-bottom: 5px;
+   padding-left: 20px;
+   max-width: 500px;
+}
+
+.data button{
+    background-color: #0dcaf0;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+
+.left ul>*>*{
+    margin:0;
+}
+
+.navbar-top{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* max-width: 100vh; */
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-top .left ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top:0px;
+    bottom:0px;
+    gap: 10px;
+    /* justify-content: space-between; */
+}
+
+.left img{
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.left{
+    color:white;
+}
+.left h2{
+    font-size:40px;
+}
+
+.right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.right img{
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: cover;
+    border-radius: 50% 50%;
+}
+
+button:hover{
+    background-color: #72e5fc;
+    cursor: pointer;
+}
+
+
+.hidden{
+    z-index: 1;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    margin: 9px 313px;
+}
+
+.hidden:hover{
+    cursor: pointer;
+}
+
+.hidden1{
+    z-index: 1;
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    /* background-color: red; */
+    margin: 9px 13px;
+}
+
+.hidden1:hover{
+    cursor: pointer;
+}
+
+
+.tabs{
+   
+    border:none;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+}
+
+.tabs ul{
+    display: flex;
+    flex-direction:row;
+    gap: 5px;
+}
+
+.tabs li{
+    cursor: pointer;
+    padding: 8px 10px;
+    color:blue;
+    background-color: rgba(211, 211, 211, 0.279);
+    border-radius: 10px;
+
+}
+
+.tabs li:not(.tabs li:first-child):hover{
+    background-color: lightgrey;
+}
+
+.tabs li:first-child{
+    color:white;
+    background-color: rgb(82, 82, 194);
+}
+
+.personal-info table{
+    /* text-align: center; */
+    margin-right: 10px;
+    margin-left: 10px;
+    width: calc(100% - 20px);
+    border-collapse: collapse;
+    border: solid lightgrey 1px;
+}
+
+.personal-info table,td,th{
+    border-collapse: collapse;
+     border: solid black 1px;
+ }
+
+ .personal-info table tr{
+    height: 40px;
+ }
+
+ .personal-info table td:first-child{
+    width: 400px;
+    background-color: rgba(128, 128, 128, 0.51);
+ }
+
+ .personal-info table td:nth-child(2){
+    background-color: rgba(240, 128, 128, 0.29);
+ }
+
+ .personal-info table th{
+    background-color: rgba(97, 97, 227, 0.701);
+ }
+
+ .photo{
+    width: 1200px;
+ }
